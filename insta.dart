@@ -29,6 +29,7 @@ class Insta extends StatelessWidget
           ).createShader(bounds),
        child:
     FaIcon(FontAwesomeIcons.instagram,size: 100,),
+    
       ),
     ),
     );
