@@ -13,6 +13,11 @@ class Insta extends StatelessWidget
       backgroundColor: Colors.black87,
       body:
       Center(
+
+
+
+
+        
         child:
         ShaderMask(
           blendMode: BlendMode.srcIn,
@@ -29,7 +34,7 @@ class Insta extends StatelessWidget
           ).createShader(bounds),
        child:
     FaIcon(FontAwesomeIcons.instagram,size: 100,),
-    
+
       ),
     ),
     );
