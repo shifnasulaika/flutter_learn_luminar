@@ -18,7 +18,9 @@ class Listview1 extends StatelessWidget {
           Center(
             child:Text(
               "items",
-              style: GoogleFonts.pacifico(),
+              style: GoogleFonts.pacifico(
+                fontSize: 30,color: Colors.green,fontWeight: FontWeight.bold
+              ),
             )
           ),
           
