@@ -9,9 +9,7 @@ void main(){
 class Listview2 extends StatelessWidget {
   var name=["bombey","shifna","manhar","nihal","raseen","shayan"];
   var number=[1234536,1234,1234,3456,2345,4567];
-  var image = [
-    
-  ]
+
 
   @override
   Widget build(BuildContext context) {
