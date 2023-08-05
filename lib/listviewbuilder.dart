@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+void main(){
+  runApp(MaterialApp(
+    home: Listview_builder(),
+  ));
+}
 
-class Listview_with_builder extends StatelessWidget {
+
+class Listview_builder extends StatelessWidget {
   
 
   @override
