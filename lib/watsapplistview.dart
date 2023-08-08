@@ -7,7 +7,7 @@ void main(){
 }
 class ListView2 extends StatelessWidget {
   var name = ['shifna','bombe','hiba','amina','riff','mundakodan','katta','shayan','shan','stikr'];
-  var image=['assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png','assets\images\contact.png'];
+  var image=['assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png','assets/images/contact.png'];
   var time=['1:10 pm','3:16 pm','1:56 pm','8:10 am','6:59 am','7:10 pm','9:10 am','2:30 pm','4:45 pm','5:21 am',];
   var msg=['sticker','long time no see','suii','hei','mone','sugalle','how is openheimer','are u bzy','when is your next trip to usa', 'mere desh vaasiyom'];
   @override
@@ -64,4 +64,4 @@ class ListView2 extends StatelessWidget {
       ),
     );
   }
-}
+}    
