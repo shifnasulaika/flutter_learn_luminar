@@ -17,6 +17,7 @@ class Stag_Grid extends StatelessWidget {
       appBar: AppBar(
         title: Text("Staggered GridView"),
         ),
+        
         body:SingleChildScrollView(
           child: StaggeredGrid.count(crossAxisCount: 4,
           crossAxisSpacing: 10,
