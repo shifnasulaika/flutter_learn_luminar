@@ -20,6 +20,7 @@ class _SimpleAnimationState extends State<SimpleAnimation> with SingleTickerProv
       });
     });
     super.initState();
+    
   }
   @override
   Widget build(BuildContext context) {
