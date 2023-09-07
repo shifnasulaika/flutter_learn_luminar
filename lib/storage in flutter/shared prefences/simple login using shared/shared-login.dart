@@ -16,6 +16,20 @@ class _loginSharedState extends State<loginShared> {
   final email=TextEditingController();
   final pwd=TextEditingController();
   late SharedPreferences preferences;
+  late bool newuser;
+  @override
+  void initState(){
+    check_if_user_already_login();
+    super.initState();
+  }
+void check_if_user_already_login() async{
+  preferences = await SharedPreferences.getInstance();
+  newuser=preferences.getBool('userlogin')??true;
+   
+   if(newuser==false){
+    Navigator.push((context),MaterialPageRoute(builder: (context) => SharedHome()));
+   }
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +67,7 @@ class _loginSharedState extends State<loginShared> {
               ){
               preferences.setString('Uname',username);
               preferences.setString('pword',password);
+              preferences.setBool('userlogin', false);
               Navigator.push(context,MaterialPageRoute(builder: (context)=> SharedHome()));}
               email.text="";
               pwd.text="";
@@ -66,3 +81,4 @@ class _loginSharedState extends State<loginShared> {
     );
   }
 }
+

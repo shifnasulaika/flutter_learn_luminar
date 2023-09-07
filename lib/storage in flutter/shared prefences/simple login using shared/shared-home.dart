@@ -27,7 +27,17 @@ class _SharedHomeState extends State<SharedHome> {
   Widget build(BuildContext context) {
     return Scaffold(
     body:Center(
-      child: Text("WElCOME $username"),
+      child:Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("WElCOME $username"),
+      const SizedBox(height:10,),
+      ElevatedButton(onPressed: (){
+        preferences.setBool('newuser', true);
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (context)=>SharedHome())
+        );
+      }, child: Text("LOGOUT"))],) 
     ),
     );
 
