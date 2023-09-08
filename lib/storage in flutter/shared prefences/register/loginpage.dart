@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ngnfnf/passing%20data%20between%20screance/homepage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class login extends StatefulWidget {
@@ -24,11 +25,11 @@ class _loginState extends State<login> {
   void fetchdata () async{
     preferences = await SharedPreferences.getInstance();
     setState(() {
-      username = preferences.getString('name')!;
+      usname = preferences.getString('name')!;
 
     }); 
   }
-  
+
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +58,8 @@ class _loginState extends State<login> {
               preferences  = await SharedPreferences.getInstance();
               String uname = usname.text;
               String conpass = pass.text;
-              if(uname == username && pass == conpass){
-                Navigator.push(context,MaterialPageRoute(builder: (context) => homepage()));
+              if(uname == usname && pass == conpass){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => ProductHome()));
               }
               else{
 
