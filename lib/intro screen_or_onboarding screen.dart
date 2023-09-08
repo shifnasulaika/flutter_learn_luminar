@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pratice/bottomsheet.dart';
-import 'package:flutter_pratice/clipperWidget.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 class onboardingscreen extends StatelessWidget{
@@ -79,6 +77,8 @@ class onboardingscreen extends StatelessWidget{
       child:Image.network(image,width:500),
     );
   }
+  
+  clipperWidget() {}
 }
 
 
